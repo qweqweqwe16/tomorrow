@@ -1,0 +1,14 @@
+.form  
+  = form_for(tomorrow, remote: true) do |f|
+    - if tomorrow.errors.any?
+      #error_explanation
+        h2
+          = pluralize(tomorrow.errors.count, "error")
+          | prohibited this tomorrow from being saved:
+        ul
+          - tomorrow.errors.full_messages.each do |message|
+            li= message
+    span.field
+      = f.text_field :name
+    span.actions
+      = f.submit

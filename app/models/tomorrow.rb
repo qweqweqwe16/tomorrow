@@ -1,0 +1,2 @@
+class Tomorrow < ApplicationRecord
+end

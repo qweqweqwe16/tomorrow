@@ -1,0 +1,1 @@
+json.partial! "tomorrows/tomorrow", tomorrow: @tomorrow

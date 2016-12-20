@@ -1,0 +1,1 @@
+json.array! @tomorrows, partial: 'tomorrows/tomorrow', as: :tomorrow
